@@ -18,9 +18,9 @@ import xsdqzb from './components/views/xsdqzb.vue'
 import ydsd from './components/views/ydsd.vue'
 import 第三人称漫游 from './components/views/第三人称漫游.vue'
 
-import jztdt from './components/map/jztdt.vue'
-import 使用图形图层 from './components/map/使用图形图层.vue'
-
+import 加载天地图 from './components/地图与图层/加载天地图.vue'
+import 使用图形图层 from './components/地图与图层/使用图形图层.vue'
+import 客户端要素图层 from './components/地图与图层/客户端要素图层.vue'
 const router=createRouter({//创建路由对象
   history:createWebHashHistory(),
   routes:[//路由映射数组
@@ -29,11 +29,12 @@ const router=createRouter({//创建路由对象
     {path:'/stld' , component:stld},
     {path:'/stqh' , component:stqh},
     {path:'/tqqh' , component:tqqh},
-    {path:'/jztdt' , component:jztdt},
+    {path:'/加载天地图' , component:加载天地图},
     {path:'/xsdqzb' , component:xsdqzb},
     {path:'/ydsd' , component:ydsd},
     {path:'/第三人称漫游' , component:第三人称漫游},
-    {path:'/使用图形图层' , component:使用图形图层}
+    {path:'/使用图形图层' , component:使用图形图层},
+    {path:'/客户端要素图层',component:客户端要素图层}
   ]
 })
 
