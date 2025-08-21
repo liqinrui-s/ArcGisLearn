@@ -14,10 +14,12 @@
 
             </el-sub-menu>
             <el-sub-menu index="地图与图层">
-                <template #title>地图与图层</template>
+                <template #title>地图</template>
                 <el-menu-item index="/加载天地图">加载天地图</el-menu-item>
                 <el-menu-item index="/使用图形图层">使用图形图层</el-menu-item>
                 <el-menu-item index="/客户端要素图层">客户端要素图层</el-menu-item>
+                <el-menu-item index="/要素信息模板">要素信息模板</el-menu-item>
+                <el-menu-item index="/动作按钮">动作按钮</el-menu-item>
             </el-sub-menu>
          </el-menu>
           </div>

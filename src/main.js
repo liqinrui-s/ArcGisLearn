@@ -21,6 +21,9 @@ import 第三人称漫游 from './components/views/第三人称漫游.vue'
 import 加载天地图 from './components/地图与图层/加载天地图.vue'
 import 使用图形图层 from './components/地图与图层/使用图形图层.vue'
 import 客户端要素图层 from './components/地图与图层/客户端要素图层.vue'
+import 要素信息模板 from './components/地图与图层/要素信息模板.vue'
+import 动作按钮 from './components/地图与图层/动作按钮.vue'
+
 const router=createRouter({//创建路由对象
   history:createWebHashHistory(),
   routes:[//路由映射数组
@@ -34,7 +37,9 @@ const router=createRouter({//创建路由对象
     {path:'/ydsd' , component:ydsd},
     {path:'/第三人称漫游' , component:第三人称漫游},
     {path:'/使用图形图层' , component:使用图形图层},
-    {path:'/客户端要素图层',component:客户端要素图层}
+    {path:'/客户端要素图层',component:客户端要素图层},
+    {path:'/要素信息模板',component:要素信息模板},
+    {path:'/动作按钮',component:动作按钮}
   ]
 })
 
