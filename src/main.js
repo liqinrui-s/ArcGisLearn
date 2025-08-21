@@ -11,12 +11,12 @@ esriConfig.portalUrl="https://ws8575.club/web"//👆导入arcgis api样式表并
 
 import {createRouter,createWebHashHistory} from 'vue-router'//导入两个路由相关的方法
 import Home from './components/Home/Home.vue'//导入Home组件
-import stld from './components/views/stld.vue'
-import stqh from './components/views/stqh.vue'
-import tqqh from './components/views/tqqh.vue'
-import xsdqzb from './components/views/xsdqzb.vue'
-import ydsd from './components/views/ydsd.vue'
-import 第三人称漫游 from './components/views/第三人称漫游.vue'
+import 二三维视图联动 from './components/视图/二三维视图联动.vue'
+import 二三维视图切换 from './components/视图/二三维视图切换.vue'
+import 切换3D视图天气 from './components/视图/切换3D视图天气.vue'
+import 显示当前坐标 from './components/视图/显示当前坐标.vue'
+import 移动视点 from './components/视图/移动视点.vue'
+import 第三人称漫游 from './components/视图/第三人称漫游.vue'
 
 import 加载天地图 from './components/地图与图层/加载天地图.vue'
 import 使用图形图层 from './components/地图与图层/使用图形图层.vue'
@@ -27,15 +27,15 @@ import 动作按钮 from './components/地图与图层/动作按钮.vue'
 const router=createRouter({//创建路由对象
   history:createWebHashHistory(),
   routes:[//路由映射数组
-    {path:'/' , component:Home},
+    {path:'/' , component:二三维视图联动},
     {path:'/Home' , component:Home},
-    {path:'/stld' , component:stld},
-    {path:'/stqh' , component:stqh},
-    {path:'/tqqh' , component:tqqh},
-    {path:'/加载天地图' , component:加载天地图},
-    {path:'/xsdqzb' , component:xsdqzb},
-    {path:'/ydsd' , component:ydsd},
-    {path:'/第三人称漫游' , component:第三人称漫游},
+    {path:'/二三维视图联动',component:二三维视图联动},
+    {path:'/二三维视图切换',component:二三维视图切换},
+    {path:'/切换3D视图天气',component:切换3D视图天气},
+    {path:'/显示当前坐标',component:显示当前坐标},
+    {path:'/移动视点',component:移动视点},
+    {path:'/第三人称漫游',component:第三人称漫游},
+    {path:'/加载天地图',component:加载天地图},
     {path:'/使用图形图层' , component:使用图形图层},
     {path:'/客户端要素图层',component:客户端要素图层},
     {path:'/要素信息模板',component:要素信息模板},

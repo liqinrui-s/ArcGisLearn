@@ -15,7 +15,7 @@
 3:绘制线要素完成后立即执行回调函数,获取绘制的线要素的几何及其折点几何的集合
 4:按照线折点的顺序依次执行视图对象的goto方法,实现视角的漫游
 */
-import * as 天地图 from '../天地图.js'
+import * as 天地图 from '../天地图'
 import 汽车 from '../../assets/images/第三人称漫游_汽车.png'
 import {onMounted,ref} from 'vue'
 import Map from '@arcgis/core/Map'
